@@ -6,11 +6,12 @@
 }
 
 body {
-    background-image: url(../../pictures/image.jpg);
+/*    background-image: url(../../pictures/image.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover;   
+    background-size: cover;  */
+    background-color: rgb(255, 240, 240);
     font-weight: 300;
     font-family: 'Kanit', sans-serif;
 }
@@ -96,6 +97,7 @@ header {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header .header-container .logo-container a {
@@ -115,6 +117,60 @@ header .header-container .profile {
 
 /* ---------------------------------------------------------------------------------------------------- */
 
+.main {
+  width: 100%;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 90px 10px 90px;
+}
+
+.product {
+  width: 30%;
+  background-color: rgb(19 19 19 / 95%);
+  color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+.products .product img {
+  width: 100%;
+  background: rgb(0 0 0);
+  box-shadow: 0 8px 15px rgb(0 0 0);
+  border-radius: 9px;
+}
+
+.products .product h3 {
+  margin: 10px 5px 20px 10px;
+}
+
+.products .product a {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgb(0 0 0 / 29%);
+  box-shadow: 0 1px 3px rgb(255 255 255);
+}
+
+.products .product a:hover {
+  background: #00ff0d;
+  color: rgb(0, 0, 0);
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0);
+}
+
 /* ---------------------------------------------------------------------------------------------------- */
 
 footer {
@@ -123,16 +179,13 @@ footer {
     padding: 30px 0;
     position: relative;
     bottom: 0px;
-    background-color: rgb(255 255 255 / 97%);
+    background-color: rgba(255, 252, 250, 0.97);
 }
 
 footer .footer-container {
     display: flex;
     justify-content: space-between;
-}
-
-footer .footer-container .support {
-    margin: 0px 90px 0px 0px;
+    align-items: center;
 }
 
 footer .footer-container .logo {
@@ -142,4 +195,7 @@ footer .footer-container .logo {
     font-size: 25px;
 }
 
+footer .footer-container .support {
+    margin: 0px 90px 0px 0px;
+}
 
