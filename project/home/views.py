@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import Product
 
 
@@ -13,3 +13,6 @@ class HomePage(ListView):
         ctx = super(HomePage, self).get_context_data(**kwargs)
         ctx['title'] = 'Main page of the website'
         return ctx
+
+
+
