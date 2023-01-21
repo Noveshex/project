@@ -1,17 +1,21 @@
 {% extends 'layout.html' %}
 
 {% block main %}
-    <div class="products">
-        {% for el in object %}
-            <div class="product">
-                {% if el.image %}
-                    <img src="{{ el.image.url }}" alt="{{ el.title }}">
-                {% else %}
-                    <img src="/pictures/default.png" alt="{{ el.title }}">
-                {% endif %}
-                <h3>{{ el.title }}</h3>
-                <a href="#">Check out</a>
-            </div>
-        {% endfor %}
+
+<!--<div class="sale_1"></div>-->
+<!--<div class="sale_2"></div>-->
+
+<div class="products">
+    {% for el in object %}
+    <div class="product">
+        {% if el.image %}
+            <img src="{{ el.image.url }}" alt="{{ el.title }}">
+        {% else %}
+            <img src="/pictures/default.png" alt="{{ el.title }}">
+        {% endif %}
+        <h3>{{ el.title }}</h3>
+        <a href="{{ el.get_absolute_url }}">Check out</a>
     </div>
+    {% endfor %}
+</div>
 {% endblock %}

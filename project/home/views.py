@@ -15,4 +15,7 @@ class HomePage(ListView):
         return ctx
 
 
+class ProductDetail(DetailView):
+    model = Product
+    template_name = 'home/product.html'
 
